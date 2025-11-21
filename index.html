@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Thế Giới Cá Nhân - Nơi chia sẻ hành trình, đam mê và kiến thức" />
+    <meta name="keywords" content="portfolio, personal website, developer, astronomy" />
+    <title>Thế Giới Cá Nhân</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/e8afc0fab3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+        <em>Dark Mode</em>
+    </div>
+
+    <header>
+        <div class="header-container">
+            <img src="public/images/logo.png" alt="Logo" class="logo" />
+            <h1 class="site-title">Personal Universe</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Trang chủ</a></li>
+                    <li><a href="vetoi.html"><i class="fas fa-user"></i> Về tôi</a></li>
+                    <li><a href="hanhtrinh.html"><i class="fas fa-map-marker-alt"></i> Hành trình</a></li>
+                    <li><a href="#projects"><i class="fas fa-project-diagram"></i> Dự án</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content" data-aos="fade-up">
+                <h2>Chào mừng đến với thế giới của tôi!</h2>
+                <p>Một không gian nơi tôi chia sẻ hành trình và đam mê.</p>
+                <div class="hero-buttons">
+                    <a href="vetoi.html" class="btn-primary">Khám phá ngay</a>
+                    <a href="#projects" class="btn-secondary">Xem dự án</a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="public/images/iss073e0036151~small.jpg" alt="Hero Image">
+            </div>
+        </section>
+
+        <section id="about-preview" class="about-preview" data-aos="fade-up">
+            <div class="about-content">
+                <h2>Về Tôi</h2>
+                <p>Là một developer đam mê công nghệ và thiên văn học. Tôi luôn tìm kiếm những thách thức mới để phát triển bản thân.</p>
+                <div class="skills-preview">
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <span>Web Development</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-meteor"></i>
+                        <span>Thiên văn học</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>UI/UX Design</span>
+                    </div>
+                </div>
+                <a href="vetoi.html" class="btn-secondary">Tìm hiểu thêm</a>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section" data-aos="fade-up">
+            <h2>Dự Án Đang Phát Triển</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <h3>Astronomy Explorer</h3>
+                        <p>Ứng dụng web giúp người dùng khám phá vũ trụ, xem thông tin về các hành tinh, chòm sao và sự kiện thiên văn.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>NASA API</span>
+                            <span>Three.js</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge">Đang phát triển</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-content">
+                        <h3>Personal Universe</h3>
+                        <p>Website cá nhân với thiết kế hiện đại, tối ưu SEO và trải nghiệm người dùng tốt.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge">Đang phát triển</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-content">
+                        <h3>Space Weather</h3>
+                        <p>Ứng dụng theo dõi thời tiết không gian, cảnh báo bão từ và các hiện tượng thiên văn.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>OpenWeather API</span>
+                            <span>Chart.js</span>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge">Đang phát triển</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section" data-aos="fade-up">
+            <h2>Liên Hệ</h2>
+            <div class="contact-container">
+                <form class="contact-form" data-aos="fade-right">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder="Tên của bạn">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required placeholder="Tin nhắn"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Gửi tin nhắn</button>
+                </form>
+                <div class="contact-info" data-aos="fade-left">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>hanhnguyenhpt1502@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>0348251110</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Personal Universe</h3>
+                <p>Nơi chia sẻ đam mê và kiến thức</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liên kết nhanh</h3>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="vetoi.html">Về tôi</a></li>
+                    <li><a href="hanhtrinh.html">Hành trình</a></li>
+                    <li><a href="#projects">Dự án</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Theo dõi</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 - Personal Universe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="public/js/script.js"></script>
+</body>
+
+</html>

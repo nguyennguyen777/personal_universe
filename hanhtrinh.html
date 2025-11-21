@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hành Trình - Personal Universe</title>
+    <link rel="stylesheet" href="public/css/hanh-trinh.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="back-home">← Trang chủ</a>
+    </header>
+
+    <section class="journey-hero">
+        <div class="journey-avatar" data-aos="fade-right">
+            <img src="public/images/journey-hero.jpg" alt="Hành Trình" class="hero-image">
+        </div>
+        <div class="journey-intro" data-aos="fade-left">
+            <h1>Hành Trình Của Mình</h1>
+            <p>Đây là nơi mình chia sẻ những cột mốc quan trọng trong hành trình phát triển của mình.</p>
+            <p>Mỗi bước đi đều là một câu chuyện, mỗi thử thách đều là một bài học quý giá.</p>
+        </div>
+    </section>
+
+    <section class="timeline" data-aos="fade-up">
+        <h2>Hành trình của mình</h2>
+        <ul class="timeline-list">
+            <li data-aos="fade-right">
+                <article>
+                    <h3><i class="fas fa-code"></i> 2022 – Bắt đầu học lập trình</h3>
+                    <p>Mình bắt đầu với HTML & CSS, cảm thấy thích thú khi có thể tạo ra thứ gì đó trên trình duyệt. Mình đã tham gia các khóa học trực tuyến và thực hành nhiều dự án nhỏ để nâng cao kỹ năng.</p>
+                    <img src="public/images/2022.jpg" alt="2022" class="timeline-image">
+                </article>
+            </li>
+            <li data-aos="fade-left">
+                <article>
+                    <h3><i class="fab fa-js"></i> 2023 – Yêu thích JavaScript</h3>
+                    <p>JavaScript mở ra thế giới tương tác, khiến mình đắm chìm trong các dự án web động và sáng tạo. Mình đã học về các framework như React và Node.js, và bắt đầu xây dựng các ứng dụng web phức tạp hơn.</p>
+                    <img src="public/images/2023.jpg" alt="2023" class="timeline-image">
+                </article>
+            </li>
+            <li data-aos="fade-right">
+                <article>
+                    <h3><i class="fas fa-telescope"></i> 2024 – Khám phá Thiên văn</h3>
+                    <p>Đam mê bầu trời và vũ trụ giúp mình nhìn thế giới theo cách rộng lớn và sâu sắc hơn. Mình đã tham gia các câu lạc bộ thiên văn học và tham dự các sự kiện quan sát sao, học hỏi về các hiện tượng thiên văn.</p>
+                    <img src="public/images/2024.jpg" alt="2024" class="timeline-image">
+                </article>
+            </li>
+            <li data-aos="fade-left">
+                <article>
+                    <h3><i class="fas fa-rocket"></i> 2025 – Dự án mới</h3>
+                    <p>Mình đang làm việc trên một dự án mới liên quan đến thiên văn học và lập trình, hy vọng sẽ chia sẻ sớm với mọi người. Dự án này kết hợp kiến thức về lập trình và thiên văn học để tạo ra một ứng dụng giúp người dùng khám phá vũ trụ.</p>
+                    <img src="public/images/2025.jpg" alt="2025" class="timeline-image">
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <section class="universe" id="universe">
+        <h2 data-aos="fade-up">Vũ trụ hành trình</h2>
+        <div class="solar-system">
+            <div class="planet sun">☀️</div>
+            <div class="planet orbit1" data-info="2022">🕸️</div>
+            <div class="planet orbit2" data-info="2023">📟</div>
+            <div class="planet orbit3" data-info="2024">🔭</div>
+            <div class="planet orbit4" data-info="2025">🚀</div>
+        </div>
+        <div class="planet-info" id="planet-info" data-aos="fade-up">
+            <h3>Nhấn vào hành tinh để xem thông tin</h3>
+            <p id="info-text"></p>
+        </div>
+    </section>
+
+    <section class="quote" data-aos="fade-in">
+        <blockquote>"Mỗi bước đi đều là một câu chuyện, mỗi thử thách đều là một bài học quý giá."</blockquote>
+    </section>
+
+    <section class="contact" data-aos="fade-up">
+        <h2>Liên hệ với mình</h2>
+        <div class="social-icons">
+            <a href="mailto:emailcuaban@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://facebook.com/ban"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/ban"><i class="fab fa-github"></i></a>
+        </div>
+        <p>Email: hanhnguyenhpt1502@gmail.com</p>
+        <p>Điện thoại: 0348251110</p>
+    </section>
+
+    <footer>
+        <p>© 2025 - Personal Universe</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const infoBox = document.getElementById("planet-info");
+        const infoText = document.getElementById("info-text");
+        const planetData = {
+            "2022": "Năm 2022 đánh dấu sự khởi đầu của hành trình lập trình với HTML & CSS.",
+            "2023": "Năm 2023 là thời điểm mình đắm chìm trong thế giới JavaScript và các framework.",
+            "2024": "Năm 2024 mình bắt đầu khám phá thiên văn học và vũ trụ.",
+            "2025": "Năm 2025 mình đang phát triển dự án mới kết hợp lập trình và thiên văn học."
+        };
+
+        document.querySelectorAll('.planet').forEach(planet => {
+            planet.addEventListener('click', () => {
+                const key = planet.getAttribute('data-info');
+                if (planetData[key]) {
+                    infoText.innerText = planetData[key];
+                } else {
+                    infoText.innerText = "Hành tinh này chưa có thông tin.";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
